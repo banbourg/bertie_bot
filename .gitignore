@@ -1,0 +1,8 @@
+# Folders
+.serverless/
+.idea/
+__pycache__
+vendored/
+
+# Files
+.DS_Store
