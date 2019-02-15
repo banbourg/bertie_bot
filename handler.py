@@ -110,7 +110,7 @@ def hello(event, context):
         full_list = [ci_r, wildciats_r, sectionals_r, te_r, b_r, dr_r, gr_r, c_r, q_r, e_r, fe_r, p_r, despacito_r, despacito_r2,
                      seimei_r, faith_r]
         pop_list = [_f for _f in full_list if _f]
-        if pop_list and random.random() < 20:
+        if pop_list and random.random() < 0.2:
             response = " ".join(pop_list)
             data = {"text": response.encode("utf8"), "chat_id": chat_id, "reply_to_message_id": message_id}
             url = BASE_URL + "/sendMessage"
